@@ -1,5 +1,5 @@
 # HapiJs
 
-Steps to run:
-npm init
-node index
+Steps to run:<br />
+npm init<br />
+node index<br />
