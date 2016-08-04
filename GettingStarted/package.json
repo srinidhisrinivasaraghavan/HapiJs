@@ -1,0 +1,26 @@
+{
+  "name": "gettingstarted",
+  "version": "1.0.0",
+  "description": "A simple tutuorial for getting started with hapi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srinidhisrinivasaraghavan/HapiJs.git"
+  },
+  "author": "Srinidhi S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srinidhisrinivasaraghavan/HapiJs/issues"
+  },
+  "homepage": "https://github.com/srinidhisrinivasaraghavan/HapiJs#readme",
+  "dependencies": {
+    "good": "^7.0.1",
+    "good-console": "^6.1.2",
+    "good-squeeze": "^4.0.0",
+    "hapi": "^14.1.0",
+    "inert": "^4.0.1"
+  }
+}
