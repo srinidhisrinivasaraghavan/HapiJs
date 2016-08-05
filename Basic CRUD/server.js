@@ -12,7 +12,7 @@ server.connection({
 });
 
 //Connect to database
-var databaseUrl = "mongodb://databaseuser:databasepassword@ds019480.mlab.com:19480/databaseall"; // 
+var databaseUrl = "mongodb://<yourdatabaseuser>:<yourdatabasepassword>@ds019480.mlab.com:19480/<yourdatabasename>"; // 
 var collections = ["books"]
 server.app.db= mongojs(databaseUrl, collections);
 

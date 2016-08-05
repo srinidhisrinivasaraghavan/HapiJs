@@ -6,7 +6,7 @@ const Joi = require('joi');
 
 exports.register = function(server, options, next) {
 
-  const db = server.app.db;
+const db = server.app.db;
 //Get 
 server.route({  
     method: 'GET',
