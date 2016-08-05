@@ -5,7 +5,11 @@ const Good = require('good');
 
 //Create a server and connect to a port
 const server = new Hapi.Server();
-server.connection({ port: 3000 });
+
+//Add server connection information
+server.connection({ 
+    host: 'localhost',
+    port: 3000 });
 
 server.route({
     method: 'GET',
