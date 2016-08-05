@@ -1,0 +1,22 @@
+{
+  "name": "customplugins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srinidhisrinivasaraghavan/HapiJs.git"
+  },
+  "author": "Srinidhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srinidhisrinivasaraghavan/HapiJs/issues"
+  },
+  "homepage": "https://github.com/srinidhisrinivasaraghavan/HapiJs#readme",
+  "dependencies": {
+    "hapi": "^14.1.0"
+  }
+}
