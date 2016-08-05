@@ -1,5 +1,7 @@
 var Hapi = require('hapi');
+var Inert = require('inert');
 var BasicRoutes = require('./routes/basic-routes');
+var StaticRoutes = require('./routes/static-routes');
 
 //create server
 var server = new Hapi.Server();
@@ -11,13 +13,23 @@ server.connection({
 });
 
 //Register the custom plugin
-server.register({
-	register:BasicRoutes},
+server.register([
+	{
+		register:BasicRoutes
+	},
+	{
+		register:Inert
+	},
+	{
+		register:StaticRoutes
+	}
+	],
 	function(err){
 		if(err)
 		{
 			throw err;
 		}
+		//Start the server
 		server.start(function(err){
 		if(err){
 			throw err;
@@ -27,5 +39,5 @@ server.register({
   }
 );
 
-//Start the server
+
 		

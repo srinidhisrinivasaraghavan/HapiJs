@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/srinidhisrinivasaraghavan/HapiJs#readme",
   "dependencies": {
-    "hapi": "^14.1.0"
+    "hapi": "^14.1.0",
+    "inert": "^4.0.1"
   }
 }

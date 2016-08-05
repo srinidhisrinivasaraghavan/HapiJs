@@ -27,6 +27,13 @@ var basicRoutes = {
 			handler:function(request,reply){
 				reply("Created a new Instance");
 			}
+		},
+		{
+			method:'GET',
+			path:'/hello',
+			handler:function(request,reply){
+				reply.file('./public/hello.html');
+			}
 		}
 	]);
 	next();
