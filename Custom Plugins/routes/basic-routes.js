@@ -28,7 +28,7 @@ var basicRoutes = {
 				reply("Created a new Instance");
 			}
 		},
-		{
+		{	//GET Static content
 			method:'GET',
 			path:'/hello',
 			handler:function(request,reply){
