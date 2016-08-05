@@ -12,13 +12,20 @@ server.connection({
 
 //Register the custom plugin
 server.register({
-	register:BasicRoutes
-});
+	register:BasicRoutes},
+	function(err){
+		if(err)
+		{
+			throw err;
+		}
+		server.start(function(err){
+		if(err){
+			throw err;
+		}
+		console.log('Server started at '+server.info.uri);
+	});
+  }
+);
 
 //Start the server
-server.start(function(err){
-	if(err){
-		throw err;
-	}
-	console.log('Server started at '+server.info.uri);
-});
+		
